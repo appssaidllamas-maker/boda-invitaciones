@@ -1,258 +1,620 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#fbf8f3">
-<title>Nuestra boda | 11 de diciembre de 2027</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#14263a">
+<meta name="robots" content="noindex">
+<title>Said y Saharabi | 11 de diciembre de 2027</title>
+<meta property="og:title" content="Said y Saharabi — nuestra boda">
+<meta property="og:description" content="11 de diciembre de 2027. Abre tu invitación y confirma tu asistencia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#fbf8f3;--ink:#253b4a;--muted:#68747a;--blue:#405c6d;--line:#e5ddd2;--white:#fffefa;--gold:#b89b6a;--danger:#963b3b;--success:#2d6a4f}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
-.wrap{width:min(100% - 32px,980px);margin:auto}.hero{min-height:74vh;display:grid;place-items:center;padding:52px 0;text-align:center;background:radial-gradient(ellipse at 50% 0%,#e8edf0 0%,transparent 58%),var(--paper)}
-.eyebrow{text-transform:uppercase;letter-spacing:.2em;font:11px/1.8 Arial,sans-serif;color:var(--blue)}h1{font-size:clamp(40px,8vw,76px);line-height:1.05;font-weight:400;margin:20px 0 16px}.amp{display:block;color:var(--gold);font-style:italic;font-size:.62em;margin:7px 0}
-.date{font:12px/1.8 Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin-top:24px}.ornament{width:84px;height:1px;background:var(--gold);margin:24px auto}.intro{max-width:580px;margin:auto;color:var(--muted);font-size:18px;line-height:1.8}
-.button{display:inline-block;border:0;border-radius:2px;background:var(--blue);color:white;padding:14px 22px;text-decoration:none;font:12px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}.button:hover{background:#304957}
-section{padding:60px 0;border-top:1px solid var(--line)}.section-title{text-align:center;font-size:clamp(28px,4vw,42px);font-weight:400;margin:0 0 12px}.section-lead{text-align:center;color:var(--muted);font:14px/1.8 Arial,sans-serif;margin:0 auto 32px;max-width:600px}
-.details{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.detail{background:var(--white);border:1px solid var(--line);padding:24px 18px;text-align:center;min-height:145px}.detail h3{font-weight:400;font-size:21px;margin:0 0 10px}.detail p{color:var(--muted);font:13px/1.8 Arial,sans-serif;margin:0;overflow-wrap:anywhere}
-.note{max-width:650px;margin:24px auto 0;text-align:center;color:var(--muted);font:13px/1.8 Arial,sans-serif}.rsvp-card{max-width:600px;margin:auto;background:var(--white);border:1px solid var(--line);padding:clamp(22px,5vw,42px)}
-label{display:block;font:12px/1.5 Arial,sans-serif;color:var(--blue);margin:18px 0 7px}select{width:100%;padding:13px 12px;border:1px solid #d7d0c7;border-radius:2px;background:white;color:var(--ink);font:15px Arial,sans-serif}
-.help{color:var(--muted);font:12px/1.7 Arial,sans-serif;margin:8px 0 0}.status{display:none;margin-top:18px;padding:13px;font:13px/1.7 Arial,sans-serif;overflow-wrap:anywhere}.status.show{display:block}.status.error{background:#f8eaea;color:var(--danger)}.status.success{background:#e9f3ed;color:var(--success)}.status.info{background:#edf2f5;color:var(--blue)}.saved-response{margin-top:18px;padding:22px;background:#e9f3ed;border:1px solid #cfe2d5;text-align:center;color:var(--success);font:14px/1.8 Arial,sans-serif}.saved-response h3{font:normal 24px/1.3 Georgia,"Times New Roman",serif;margin:0 0 10px;color:var(--ink)}
-.submit-row{margin-top:24px}.submit-row .button{width:100%}.hidden{display:none!important}footer{padding:34px 0 46px;text-align:center;color:var(--muted);font:11px/1.8 Arial,sans-serif;letter-spacing:.08em}.hidden-frame{position:absolute;width:1px;height:1px;border:0;left:-9999px}
-@media(max-width:650px){.details{grid-template-columns:1fr}.hero{min-height:72vh}section{padding:46px 0}}
-</style></head>
+:root{
+  --noche:#14263a; --noche-2:#1c3349; --papel:#f3ede1; --papel-2:#fbf8f1; --tinta:#1b2e3f;
+  --niebla:#8ea2b1; --gris:#5f6b75; --oro:#b4925a; --oro-claro:#dcc59a; --linea:#ddd3c1;
+  --ok:#2c6a4f; --mal:#9a3a3a;
+  --display:"Bodoni Moda","Didot","Bodoni MT",Georgia,serif;
+  --texto:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--papel);color:var(--tinta);font:400 17px/1.65 var(--texto);-webkit-font-smoothing:antialiased}
+body.locked{overflow:hidden}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--oro);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{width:min(100% - 40px,860px);margin-inline:auto}
+
+/* ---------- Sobre ---------- */
+.sobre{position:fixed;inset:0;z-index:50;overflow:hidden}
+.sobre-base,.sobre-solapa{position:absolute;left:0;right:0;transition:transform 1.25s cubic-bezier(.7,0,.2,1)}
+.sobre-base{inset:0;background:#e9dfcc}
+.sobre-sombra{position:absolute;inset:0 0 auto 0;height:60%;filter:drop-shadow(0 6px 14px rgba(60,45,20,.28));transition:transform 1.25s cubic-bezier(.7,0,.2,1)}
+.sobre-solapa{top:0;height:100%;background:linear-gradient(180deg,#f6efe2,#efe6d5);clip-path:polygon(0 0,100% 0,100% 62%,50% 100%,0 62%)}
+.sobre-texto{position:absolute;left:0;right:0;text-align:center;color:var(--tinta);transition:opacity .45s;padding:0 24px}
+.sobre-arriba{top:15%}
+.sobre-arriba .n{font:italic 400 clamp(30px,6vw,46px)/1.1 var(--display)}
+.sobre-arriba .f{margin-top:10px;font-size:14px;color:var(--gris);letter-spacing:.04em}
+.sobre-abajo{top:calc(60% + 84px)}
+.sobre-abajo .para{font-size:14px;color:var(--gris)}
+.sobre-abajo .quien{font:italic 400 clamp(22px,4.6vw,30px)/1.25 var(--display);margin-top:2px}
+.sobre-abajo .pista{margin-top:18px;font-size:13px;color:var(--gris)}
+.sello{position:absolute;left:50%;top:60%;width:104px;height:104px;margin:-52px 0 0 -52px;border:0;border-radius:50%;cursor:pointer;
+  color:#5b4420;font:italic 500 30px/1 var(--display);letter-spacing:-.02em;
+  background:radial-gradient(circle at 34% 30%,#e4c98f 0,#c4a166 38%,#a07d44 78%,#8a6a36 100%);
+  box-shadow:inset 0 0 0 7px rgba(255,255,255,.09),inset 0 0 0 8px rgba(90,65,25,.25),inset 0 -6px 10px rgba(80,55,20,.35),0 5px 14px rgba(60,40,10,.4);
+  transition:transform .35s,opacity .4s}
+.sello::after{content:"";position:absolute;inset:-9px;border-radius:50%;border:1px solid var(--oro);opacity:0;animation:latido 2.4s ease-out infinite}
+.sello:hover{transform:scale(1.05)}
+@keyframes latido{0%{transform:scale(.9);opacity:.7}100%{transform:scale(1.35);opacity:0}}
+.sobre.abierto .sobre-sombra{transform:translateY(-105%)}
+.sobre.abierto .sobre-base{transform:translateY(105%)}
+.sobre.abierto .sobre-texto,.sobre.abierto .sello{opacity:0}
+.sobre.abierto .sello{transform:scale(.6)}
+
+/* ---------- Portada ---------- */
+.hero{position:relative;min-height:100svh;display:grid;place-items:center;text-align:center;color:var(--papel);padding:72px 0 64px;overflow:hidden;
+  background:radial-gradient(120% 80% at 50% 110%,#27445d 0,transparent 60%),var(--noche)}
+.estrellas{position:absolute;inset:0;pointer-events:none}
+.estrellas i{position:absolute;width:2px;height:2px;border-radius:50%;background:#f1e6cf;animation:titila 4s ease-in-out infinite}
+@keyframes titila{50%{opacity:.15}}
+.hero .wrap{position:relative}
+.hero-pre{margin:0 0 26px;font:italic 400 clamp(19px,2.6vw,23px)/1.3 var(--display);color:var(--oro-claro)}
+h1{margin:0;font:italic 400 clamp(64px,15.5vw,148px)/.92 var(--display);letter-spacing:-.025em}
+h1 span{display:block}
+h1 .y{font-size:.34em;line-height:1.5;color:var(--oro-claro);letter-spacing:0}
+.fecha{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:clamp(14px,3vw,28px);max-width:460px;margin:44px auto 0;font-size:clamp(15px,2.2vw,17px)}
+.fecha span{padding:9px 0;border-block:1px solid rgba(220,197,154,.55)}
+.fecha b{font:400 clamp(52px,9vw,72px)/1 var(--display)}
+.anio{margin:6px 0 0;font:400 20px/1 var(--display);letter-spacing:.3em;padding-left:.3em;color:var(--oro-claro)}
+.falta{margin:34px 0 30px;color:var(--niebla);font-size:15px;font-variant-numeric:tabular-nums;min-height:1.6em}
+.entra .hero-pre,.entra h1 span,.entra .fecha,.entra .anio,.entra .falta,.entra .hero .btn{animation:sube 1s cubic-bezier(.2,.7,.2,1) both}
+.entra h1 span:nth-child(1){animation-delay:.25s}.entra h1 span:nth-child(2){animation-delay:.45s}.entra h1 span:nth-child(3){animation-delay:.6s}
+.entra .fecha{animation-delay:.95s}.entra .anio{animation-delay:1.05s}.entra .falta{animation-delay:1.2s}.entra .hero .btn{animation-delay:1.3s}
+@keyframes sube{from{opacity:0;transform:translateY(22px)}}
+
+.btn{display:inline-block;border:1px solid transparent;border-radius:999px;padding:14px 30px;font:600 15px/1.2 var(--texto);text-decoration:none;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn-oro{background:var(--oro-claro);color:var(--noche)}.btn-oro:hover{background:#ecd9b3}
+.btn-tinta{background:var(--tinta);color:var(--papel-2)}.btn-tinta:hover{background:#2a4359}
+.btn-linea{background:transparent;border-color:var(--tinta);color:var(--tinta)}.btn-linea:hover{background:var(--tinta);color:var(--papel-2)}
+.btn[disabled]{opacity:.55;cursor:default}
+
+/* ---------- Secciones ---------- */
+section{padding:clamp(64px,10vw,112px) 0}
+h2{margin:0 0 14px;font:italic 400 clamp(36px,6vw,56px)/1.08 var(--display);letter-spacing:-.01em}
+.lead{margin:0;max-width:56ch;color:var(--gris)}
+.carta{text-align:center}
+.carta p{margin:0 auto;max-width:30ch;font:italic 400 clamp(24px,3.8vw,34px)/1.4 var(--display)}
+.carta .firma{margin-top:26px;font:400 16px/1.5 var(--texto);color:var(--gris);max-width:none}
+
+.datos{margin:44px 0 0;border-top:1px solid var(--tinta)}
+.dato{display:grid;grid-template-columns:minmax(120px,200px) 1fr;gap:8px 32px;padding:26px 0;border-bottom:1px solid var(--linea)}
+.dato dt{font:italic 400 24px/1.2 var(--display)}
+.dato dd{margin:0}
+.dato dd strong{display:block;font-weight:600;font-size:18px}
+.dato dd .sec{color:var(--gris)}
+.dato dd a{display:inline-block;margin-top:8px;font-weight:600;font-size:15px;text-underline-offset:4px}
+.pendiente{color:var(--gris)}
+.acciones{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+
+.horario{list-style:none;margin:40px 0 0;padding:0;border-left:1px solid var(--oro);margin-left:6px}
+.horario li{position:relative;padding:0 0 26px 28px}
+.horario li::before{content:"";position:absolute;left:-5px;top:9px;width:9px;height:9px;border-radius:50%;background:var(--oro)}
+.horario time{font:400 22px/1.2 var(--display);display:block}
+.lista{margin:36px 0 0;padding:0;list-style:none;border-top:1px solid var(--linea)}
+.lista li{padding:20px 0;border-bottom:1px solid var(--linea)}
+.lista b{display:block;font-weight:600}
+.lista span{color:var(--gris)}
+.alt{background:var(--papel-2);border-block:1px solid var(--linea)}
+
+/* ---------- Confirmación ---------- */
+#confirmacion{background:var(--noche);color:var(--papel)}
+#confirmacion h2{color:var(--papel)}
+#confirmacion .lead{color:var(--niebla)}
+#confirmacion .tarjeta .lead{color:var(--gris)}
+.tarjeta{margin-top:40px;background:var(--papel-2);color:var(--tinta);border-radius:6px;padding:clamp(24px,5vw,48px);max-width:640px;box-shadow:0 30px 60px -30px rgba(0,0,0,.55)}
+.hola{margin:0 0 4px;font:italic 400 clamp(26px,4.4vw,34px)/1.2 var(--display)}
+.cupo{margin:0 0 26px;color:var(--gris)}
+.opciones{border:0;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.opcion{position:relative;cursor:pointer}
+.opcion input{position:absolute;opacity:0;inset:0}
+.opcion span{display:block;height:100%;padding:18px 18px 16px;border:1px solid var(--linea);border-radius:6px;background:#fff;transition:all .2s}
+.opcion b{display:block;font:italic 400 23px/1.2 var(--display)}
+.opcion small{display:block;margin-top:4px;font-size:14px;color:var(--gris)}
+.opcion:hover span{border-color:var(--tinta)}
+.opcion input:checked+span{background:var(--tinta);border-color:var(--tinta);color:var(--papel-2)}
+.opcion input:checked+span small{color:var(--niebla)}
+.opcion input:focus-visible+span{outline:2px solid var(--oro);outline-offset:3px}
+.campo{margin-top:26px}
+.campo>label,.campo>.et{display:block;font-weight:600;font-size:15px;margin-bottom:8px}
+.campo .op{font-weight:400;color:var(--gris)}
+.ayuda{margin:8px 0 0;font-size:14px;color:var(--gris)}
+input[type=text],textarea{width:100%;padding:13px 14px;border:1px solid var(--linea);border-radius:6px;background:#fff;color:var(--tinta);font:400 16px/1.4 var(--texto)}
+input[type=text]:focus,textarea:focus{outline:none;border-color:var(--tinta);box-shadow:0 0 0 3px rgba(180,146,90,.25)}
+textarea{min-height:96px;resize:vertical}
+#nombres input+input{margin-top:8px}
+.contador{display:inline-flex;align-items:center;border:1px solid var(--linea);border-radius:999px;background:#fff}
+.contador button{width:50px;height:50px;border:0;background:none;font:400 24px/1 var(--texto);color:var(--tinta);cursor:pointer;border-radius:50%}
+.contador button[disabled]{opacity:.25;cursor:default}
+.contador output{min-width:44px;text-align:center;font:400 28px/1 var(--display)}
+.enviar{margin-top:30px}.enviar .btn{width:100%;padding:17px}
+.aviso{margin-top:16px;padding:13px 15px;border-radius:6px;font-size:15px;overflow-wrap:anywhere}
+.aviso.error{background:#f6e6e4;color:var(--mal)}.aviso.info{background:#e8eef2;color:#35506a}
+.cargando{display:flex;align-items:center;gap:12px;color:var(--gris)}
+.cargando::before{content:"";width:18px;height:18px;border-radius:50%;border:2px solid var(--linea);border-top-color:var(--oro);animation:gira .8s linear infinite}
+@keyframes gira{to{transform:rotate(360deg)}}
+.guardada h3{margin:0 0 6px;font:italic 400 clamp(30px,5vw,40px)/1.15 var(--display)}
+.guardada .resumen{margin:22px 0 0;border-top:1px solid var(--tinta)}
+.guardada .resumen div{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--linea);font-size:16px}
+.guardada .resumen dt{color:var(--gris)}.guardada .resumen dd{margin:0;overflow-wrap:anywhere}
+.guardada .nota{margin:18px 0 0;font-size:14px;color:var(--gris)}
+.marco-oculto{position:absolute;width:1px;height:1px;border:0;left:-9999px}
+#confeti{position:fixed;inset:0;pointer-events:none;z-index:40}
+
+footer{background:var(--noche);color:var(--niebla);text-align:center;padding:10px 20px 56px;font-size:14px}
+footer .mono{font:italic 400 40px/1 var(--display);color:var(--oro-claro);margin-bottom:10px}
+
+@media(max-width:600px){
+  body{font-size:16px}
+  .dato{grid-template-columns:1fr;gap:4px;padding:22px 0}
+  .opciones{grid-template-columns:1fr}
+  .guardada .resumen div{grid-template-columns:1fr;gap:0}
+  .acciones .btn{flex:1 1 100%;text-align:center}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
 <body>
-<header class="hero"><div class="wrap">
-<div class="eyebrow">Con la alegría de compartir nuestra historia</div>
-<h1><span id="nombre1">Nuestros nombres</span><span class="amp">&</span><span id="nombre2">Nuestra boda</span></h1>
-<div class="ornament"></div><p class="intro">Hay momentos que se vuelven inolvidables cuando los compartimos con las personas que queremos. Nos encantaría que formaras parte de este día tan especial.</p>
-<div class="date">Sábado · 11 de diciembre · 2027</div><div class="ornament"></div><a class="button" href="#confirmacion">Confirmar asistencia</a>
-</div></header>
+
+<!-- Sobre de bienvenida: solo se muestra si hay JavaScript -->
+<div class="sobre" id="sobre" hidden>
+  <div class="sobre-base"></div>
+  <div class="sobre-sombra"><div class="sobre-solapa"></div></div>
+  <div class="sobre-texto sobre-arriba"><div class="n" id="sobreNombres"></div><div class="f" id="sobreFecha"></div></div>
+  <button class="sello" id="sello" type="button" aria-label="Abrir la invitación"><span id="selloTexto"></span></button>
+  <div class="sobre-texto sobre-abajo">
+    <div class="para" id="sobrePara">Una invitación para</div>
+    <div class="quien" id="sobreQuien">ti</div>
+    <div class="pista">Toca el sello para abrirla</div>
+  </div>
+</div>
+
+<header class="hero" id="inicio">
+  <div class="estrellas" id="estrellas" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="hero-pre">Nos casamos</p>
+    <h1><span id="n1"></span><span class="y">y</span><span id="n2"></span></h1>
+    <div class="fecha"><span id="fDia"></span><b id="fNum"></b><span id="fMes"></span></div>
+    <p class="anio" id="fAnio"></p>
+    <p class="falta" id="falta" aria-live="off"></p>
+    <a class="btn btn-oro" href="#confirmacion">Confirmar asistencia</a>
+  </div>
+</header>
+
 <main>
-<section id="detalles"><div class="wrap"><h2 class="section-title">Un día para recordar</h2><p class="section-lead">Estamos preparando cada detalle con mucho cariño. Guarda esta página; aquí encontrarás la información de nuestra celebración.</p>
-<div class="details"><article class="detail"><h3>La fecha</h3><p>11 de diciembre de 2027<br>Fecha tentativa</p></article><article class="detail"><h3>La ceremonia</h3><p>Próximamente compartiremos el horario y el lugar.</p></article><article class="detail"><h3>La celebración</h3><p>Los detalles de la recepción se actualizarán cuando estén confirmados.</p></article></div>
-<p class="note">Código de vestimenta, mapa, galería de fotografías y horarios se agregarán cuando estén definidos.</p></div></section>
-<section id="confirmacion"><div class="wrap"><h2 class="section-title">¿Nos acompañas?</h2><p class="section-lead" id="rsvpIntro">Abre tu invitación personal para confirmar tu asistencia.</p>
-<div class="rsvp-card">
-<div id="inviteLoading" class="status show info">Estamos verificando tu invitación…</div>
-<div id="inviteInvalid" class="status error hidden" role="alert">No pudimos validar este enlace. Abre el enlace personal que recibiste con tu invitación o contacta a los anfitriones.</div>
-<div id="savedResponse" class="saved-response hidden" role="status" aria-live="polite"></div>
-<form id="rsvpForm" class="hidden">
-<input type="hidden" id="codigo" name="codigo"><input type="hidden" id="token" name="token">
-<p id="inviteMessage" class="help">Tu invitación ha sido identificada.</p>
-<label for="respuesta">Tu respuesta</label><select id="respuesta" name="respuesta" required><option value="asistira">¡Sí, ahí estaré!</option><option value="no_asistira">Lo siento, no podré asistir</option></select>
-<div id="attendanceCountGroup"><label for="asistentes">Número de asistentes (incluyéndote)</label><select id="asistentes" name="numero_asistentes" required></select><p class="help">El número de asistentes no puede superar el cupo autorizado para esta invitación.</p></div>
-<div class="submit-row"><button class="button" id="submitButton" type="submit">Enviar confirmación</button></div><div id="status" class="status" role="status" aria-live="polite"></div>
-</form>
-<form id="postForm" class="hidden-frame" method="post" target="postFrame"><input type="hidden" name="payload" id="payload"></form><iframe name="postFrame" id="postFrame" class="hidden-frame" title="Respuesta de confirmación"></iframe>
-</div></div></section></main><footer>CON CARIÑO · NUESTRA BODA · 2027</footer>
+  <section class="carta"><div class="wrap">
+    <p id="cartaTexto">Hay días que se vuelven inolvidables cuando se comparten con quienes más queremos. Nos encantaría que estuvieras en el nuestro.</p>
+    <p class="firma" id="cartaFirma"></p>
+  </div></section>
+
+  <section id="detalles" class="alt"><div class="wrap">
+    <h2>El día</h2>
+    <p class="lead">Guarda esta página: aquí iremos publicando cada detalle conforme lo confirmemos.</p>
+    <dl class="datos" id="datos"></dl>
+    <div class="acciones">
+      <a class="btn btn-tinta" id="calGoogle" target="_blank" rel="noopener">Guardar en Google Calendar</a>
+      <button class="btn btn-linea" id="calIcs" type="button">Descargar para Apple u Outlook</button>
+    </div>
+  </div></section>
+
+  <div id="extras"></div>
+
+  <section id="confirmacion"><div class="wrap">
+    <h2>¿Nos acompañas?</h2>
+    <p class="lead" id="rsvpLead">Cuéntanos si podrás venir. Te toma menos de un minuto.</p>
+    <div class="tarjeta">
+      <div id="cargando" class="cargando">Buscando tu invitación…</div>
+      <div id="invalida" class="aviso error" role="alert" hidden></div>
+      <div id="guardada" class="guardada" role="status" aria-live="polite" hidden></div>
+
+      <form id="rsvpForm" hidden novalidate>
+        <p class="hola" id="hola"></p>
+        <p class="cupo" id="cupo"></p>
+        <fieldset class="opciones"><legend class="sr">Tu respuesta</legend>
+          <label class="opcion"><input type="radio" name="respuesta" value="asistira"><span><b>Sí, ahí estaré</b><small>Cuenten conmigo</small></span></label>
+          <label class="opcion"><input type="radio" name="respuesta" value="no_asistira"><span><b>No podré asistir</b><small>Los acompaño de corazón</small></span></label>
+        </fieldset>
+
+        <div id="camposSi" hidden>
+          <div class="campo" id="campoCuantos">
+            <span class="et" id="etCuantos">¿Cuántas personas asistirán, contándote?</span>
+            <div class="contador" role="group" aria-labelledby="etCuantos">
+              <button type="button" id="menos" aria-label="Una persona menos">−</button>
+              <output id="cuantos" aria-live="polite">1</output>
+              <button type="button" id="mas" aria-label="Una persona más">+</button>
+            </div>
+          </div>
+          <div class="campo">
+            <span class="et">Nombre de cada asistente <span class="op">(opcional)</span></span>
+            <div id="nombres"></div>
+            <p class="ayuda">Nos ayuda a preparar los lugares en las mesas.</p>
+          </div>
+          <div class="campo">
+            <label for="restricciones">Alergias o restricciones de alimentos <span class="op">(opcional)</span></label>
+            <input type="text" id="restricciones" maxlength="300" placeholder="Por ejemplo: vegetariano, alergia a la nuez">
+          </div>
+        </div>
+
+        <div class="campo" id="campoMensaje" hidden>
+          <label for="mensaje">Un mensaje para nosotros <span class="op">(opcional)</span></label>
+          <textarea id="mensaje" maxlength="600"></textarea>
+        </div>
+
+        <div class="enviar"><button class="btn btn-tinta" id="enviar" type="submit">Enviar mi respuesta</button></div>
+        <div id="estado" role="status" aria-live="polite" hidden></div>
+      </form>
+
+      <form id="postForm" class="marco-oculto" method="post" target="postFrame"><input type="hidden" name="payload" id="payload"></form>
+      <iframe name="postFrame" id="postFrame" class="marco-oculto" title="Envío de la respuesta"></iframe>
+    </div>
+  </div></section>
+</main>
+
+<footer><div class="mono" id="pieMono"></div><div id="pieTexto"></div></footer>
+<canvas id="confeti" hidden></canvas>
+
 <script>
-/* Reemplaza por la URL canónica /exec de tu aplicación de Apps Script. */
+/* =====================================================================
+   1. DATOS DE LA BODA — edita solo este bloque.
+   Lo que dejes vacío ("" o []) se muestra como "Próximamente" o no aparece.
+   ===================================================================== */
+const CONFIG = {
+  nombres: ["Said", "Saharabi"],
+  fecha: "2027-12-11",          // AAAA-MM-DD
+  fechaTentativa: true,         // cambia a false cuando la fecha sea definitiva
+  ceremonia: { hora: "", lugar: "", direccion: "", mapa: "" },   // hora "17:00", mapa = enlace de Google Maps
+  recepcion: { hora: "", lugar: "", direccion: "", mapa: "" },
+  vestimenta: "",               // p. ej. "Formal. Les pedimos evitar el color blanco."
+  notaNinos: "",                // p. ej. "Celebración solo para adultos."
+  itinerario: [],               // [{ hora: "17:00", titulo: "Ceremonia" }, ...]
+  regalos: [],                  // [{ titulo: "Liverpool", detalle: "Evento 12345678", url: "https://..." }]
+  hospedaje: [],                // [{ titulo: "Hotel ...", detalle: "Código de grupo ...", url: "" }]
+  preguntas: [],                // [{ titulo: "¿Hay estacionamiento?", detalle: "Sí, ..." }]
+  contactoWhatsapp: ""          // "5215512345678" — aparece en los mensajes de ayuda
+};
+
+/* 2. URL /exec de tu aplicación de Apps Script. */
 const API_URL = "https://script.google.com/macros/s/AKfycbwIi39r6aUzRi4U4lKC9x90GP3BkzvN1YRfIrx42RC6QZ5VWXxTZzvFSPHX0G9avvtU/exec";
-const params = new URLSearchParams(window.location.search);
+
+/* ===================================================================== */
+const $ = id => document.getElementById(id);
+const params = new URLSearchParams(location.search);
 const codigo = (params.get("i") || "").trim();
 const token = (params.get("t") || "").trim();
-const form = document.getElementById("rsvpForm"), postForm = document.getElementById("postForm");
-const payloadInput = document.getElementById("payload"), iframe = document.getElementById("postFrame");
-const statusBox = document.getElementById("status"), submitButton = document.getElementById("submitButton");
-const respuestaSelect = document.getElementById("respuesta"), asistentesSelect = document.getElementById("asistentes");
-const loadingBox = document.getElementById("inviteLoading"), invalidBox = document.getElementById("inviteInvalid");
-const inviteMessage = document.getElementById("inviteMessage"), attendanceCountGroup = document.getElementById("attendanceCountGroup");
-let awaitingSubmit = false, submitPayload = null, maxGuests = 1;
+/* Vista previa: abre el archivo en tu computadora o agrega ?demo=1 para probar sin tocar la hoja. */
+const DEMO = params.has("demo") || !/^https?:$/.test(location.protocol);
+const [N1, N2] = CONFIG.nombres;
+const pareja = N1 + " y " + N2;
+const dia = new Date(CONFIG.fecha + "T12:00:00");
+const fmt = o => new Intl.DateTimeFormat("es-MX", o).format(dia);
+const fechaLarga = fmt({ weekday: "long", day: "numeric", month: "long", year: "numeric" });
+const reducido = matchMedia("(prefers-reduced-motion:reduce)").matches;
 
-function showStatus(message,type){
-  statusBox.textContent=message;
-  statusBox.className="status show "+type;
+function el(tag, props, ...hijos) {
+  const n = document.createElement(tag);
+  if (props) for (const k in props) { if (k === "class") n.className = props[k]; else if (k in n) n[k] = props[k]; else n.setAttribute(k, props[k]); }
+  n.append(...hijos.filter(h => h != null && h !== ""));
+  return n;
 }
-
-function showInvalid(message){
-  loadingBox.classList.add("hidden");
-  form.classList.add("hidden");
-  document.getElementById("savedResponse").classList.add("hidden");
-  invalidBox.textContent=message||"No pudimos validar este enlace. Contacta a los anfitriones.";
-  invalidBox.classList.remove("hidden");
+const enlaceSeguro = u => /^https?:\/\//i.test(u || "") ? u : "";
+function hora12(h) {
+  if (!/^\d{1,2}:\d{2}$/.test(h || "")) return h || "";
+  let [a, b] = h.split(":").map(Number);
+  const s = a >= 12 ? "p. m." : "a. m."; a = a % 12 || 12;
+  return a + ":" + String(b).padStart(2, "0") + " " + s;
 }
+const ayudaContacto = () => CONFIG.contactoWhatsapp ? " Escríbenos por WhatsApp y lo resolvemos." : " Escríbele a " + pareja + " y lo resolvemos.";
 
-function jsonp(action,paramsObj){return new Promise((resolve,reject)=>{
-  const callbackName="rsvpCallback_"+Date.now()+"_"+Math.floor(Math.random()*100000);
-  const script=document.createElement("script");
-  const timeout=setTimeout(()=>finish(new Error("Tiempo de espera agotado.")),8000);
-  function finish(err,result){
-    clearTimeout(timeout);
-    try{delete window[callbackName]}catch(_){window[callbackName]=undefined}
-    script.remove();
-    err?reject(err):resolve(result);
+/* ---------- Textos fijos ---------- */
+document.title = pareja + " | " + fmt({ day: "numeric", month: "long", year: "numeric" });
+$("n1").textContent = N1; $("n2").textContent = N2;
+$("fDia").textContent = fmt({ weekday: "long" });
+$("fNum").textContent = fmt({ day: "numeric" });
+$("fMes").textContent = fmt({ month: "long" });
+$("fAnio").textContent = fmt({ year: "numeric" });
+$("sobreNombres").textContent = pareja;
+$("sobreFecha").textContent = fmt({ day: "numeric", month: "long", year: "numeric" });
+$("selloTexto").textContent = N1[0] + "y" + N2[0];
+$("pieMono").textContent = N1[0] + " y " + N2[0];
+$("pieTexto").textContent = "Con cariño, " + pareja;
+$("cartaFirma").textContent = pareja;
+
+/* ---------- Estrellas ---------- */
+(function () {
+  const c = $("estrellas"), f = document.createDocumentFragment();
+  for (let i = 0; i < 46; i++) {
+    const s = document.createElement("i"), g = Math.random() < .2 ? 3 : 2;
+    s.style.cssText = `left:${Math.random() * 100}%;top:${Math.random() * 70}%;width:${g}px;height:${g}px;opacity:${.25 + Math.random() * .6};animation-delay:${-Math.random() * 4}s;animation-duration:${3 + Math.random() * 4}s`;
+    f.appendChild(s);
   }
-  window[callbackName]=data=>finish(null,data);
-  script.onerror=()=>finish(new Error("No se pudo conectar con el servicio."));
-  const query=new URLSearchParams({action,...paramsObj,callback:callbackName,t:String(Date.now())});
-  script.src=API_URL+"?"+query.toString();
-  document.body.appendChild(script);
-});}
+  c.appendChild(f);
+})();
 
-function configureAttendanceOptions(max){
-  maxGuests=Math.max(1,Math.min(20,Number(max)||1));
-  asistentesSelect.replaceChildren();
-  for(let n=1;n<=maxGuests;n++){
-    const option=document.createElement("option");
-    option.value=String(n);
-    option.textContent=n===1?"1 persona":n+" personas";
-    asistentesSelect.appendChild(option);
+/* ---------- Cuenta regresiva ---------- */
+(function () {
+  const meta = new Date(CONFIG.fecha + "T" + (/^\d{1,2}:\d{2}$/.test(CONFIG.ceremonia.hora) ? CONFIG.ceremonia.hora.padStart(5, "0") : "00:00") + ":00");
+  const pl = (n, s, p) => n + " " + (n === 1 ? s : p);
+  function pinta() {
+    const ms = meta - Date.now(), out = $("falta");
+    if (ms <= -864e5) { out.textContent = "Gracias por acompañarnos en nuestro gran día."; return; }
+    if (ms <= 0) { out.textContent = "¡Hoy es el día!"; return; }
+    const d = Math.floor(ms / 864e5), h = Math.floor(ms / 36e5) % 24, m = Math.floor(ms / 6e4) % 60;
+    out.textContent = "Faltan " + pl(d, "día", "días") + ", " + pl(h, "hora", "horas") + " y " + pl(m, "minuto", "minutos");
   }
-  inviteMessage.textContent="Invitación validada. Cupo autorizado: "+maxGuests+(maxGuests===1?" persona.":" personas.");
-}
+  pinta(); setInterval(pinta, 30000);
+})();
 
-function updateAttendanceOptions(){
-  const declined=respuestaSelect.value==="no_asistira";
-  attendanceCountGroup.classList.toggle("hidden",declined);
-  asistentesSelect.required=!declined;
-}
-respuestaSelect.addEventListener("change",updateAttendanceOptions);
-
-function showSavedResponse(result){
-  loadingBox.classList.add("hidden");
-  invalidBox.classList.add("hidden");
-  form.classList.add("hidden");
-
-  const box=document.getElementById("savedResponse");
-  const response=String(result.respuesta||"");
-  const count=Number(result.numero_asistentes)||0;
-  let title, detail;
-
-  if(response==="asistira"){
-    title="¡Gracias por confirmar!";
-    detail="Tu respuesta quedó registrada: asistirás a nuestra boda.";
-    detail+=" Número de asistentes registrado: "+count+(count===1?" persona.":" personas.");
-  }else if(response==="no_asistira"){
-    title="Gracias por avisarnos";
-    detail="Tu respuesta quedó registrada: nos indicaste que no podrás asistir.";
-  }else{
-    title="Tu respuesta ya está registrada";
-    detail="Si necesitas corregirla, comunícate directamente con Said y Saharabi.";
+/* ---------- El día ---------- */
+(function () {
+  const datos = $("datos");
+  const fila = (titulo, ...dd) => datos.append(el("div", { class: "dato" }, el("dt", null, titulo), el("dd", null, ...dd)));
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  fila("Fecha", el("strong", null, cap(fechaLarga)), CONFIG.fechaTentativa ? el("span", { class: "sec" }, "Fecha tentativa. Te avisaremos en cuanto quede confirmada.") : "");
+  for (const [titulo, x, falta] of [["Ceremonia", CONFIG.ceremonia, "Pronto compartiremos el lugar y la hora."], ["Recepción", CONFIG.recepcion, "Pronto compartiremos el lugar y la hora."]]) {
+    if (!x.lugar && !x.hora) { fila(titulo, el("span", { class: "pendiente" }, falta)); continue; }
+    const mapa = enlaceSeguro(x.mapa);
+    fila(titulo, el("strong", null, [x.lugar, hora12(x.hora)].filter(Boolean).join(", ")), x.direccion ? el("span", { class: "sec" }, x.direccion) : "",
+      mapa ? el("div", null, el("a", { href: mapa, target: "_blank", rel: "noopener" }, "Cómo llegar")) : "");
   }
+  fila("Vestimenta", CONFIG.vestimenta ? el("span", null, CONFIG.vestimenta) : el("span", { class: "pendiente" }, "Pronto te contaremos el código de vestimenta."));
+  if (CONFIG.notaNinos) fila("Niños", el("span", null, CONFIG.notaNinos));
 
-  box.replaceChildren();
-  const heading=document.createElement("h3");
-  heading.textContent=title;
-  const paragraph=document.createElement("p");
-  paragraph.textContent=detail;
-  const note=document.createElement("p");
-  note.textContent="Esta respuesta no se puede modificar desde la invitación. Si necesitas corregirla, contacta a los anfitriones.";
-  box.append(heading,paragraph,note);
-  box.classList.remove("hidden");
+  /* Calendario */
+  const ymd = d => d.getFullYear() + String(d.getMonth() + 1).padStart(2, "0") + String(d.getDate()).padStart(2, "0");
+  const sig = new Date(dia); sig.setDate(sig.getDate() + 1);
+  const titulo = "Boda de " + pareja, lugar = [CONFIG.ceremonia.lugar, CONFIG.ceremonia.direccion].filter(Boolean).join(", ");
+  $("calGoogle").href = "https://calendar.google.com/calendar/render?" + new URLSearchParams({ action: "TEMPLATE", text: titulo, dates: ymd(dia) + "/" + ymd(sig), location: lugar, details: location.href.split("#")[0] });
+  $("calIcs").addEventListener("click", () => {
+    const ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Boda//ES", "BEGIN:VEVENT", "UID:boda-" + ymd(dia) + "@invitacion", "DTSTAMP:" + new Date().toISOString().replace(/[-:]|\.\d+/g, ""),
+      "DTSTART;VALUE=DATE:" + ymd(dia), "DTEND;VALUE=DATE:" + ymd(sig), "SUMMARY:" + titulo, lugar ? "LOCATION:" + lugar.replace(/,/g, "\\,") : "", "END:VEVENT", "END:VCALENDAR"].filter(Boolean).join("\r\n");
+    const a = el("a", { href: URL.createObjectURL(new Blob([ics], { type: "text/calendar" })), download: "boda-" + N1 + "-" + N2 + ".ics" });
+    document.body.append(a); a.click(); a.remove();
+  });
+
+  /* Secciones opcionales */
+  const extras = $("extras");
+  let alterna = false;
+  function seccion(id, titulo, lead, cuerpo) {
+    const s = el("section", { id, class: alterna ? "alt" : "" }, el("div", { class: "wrap" }, el("h2", null, titulo), lead ? el("p", { class: "lead" }, lead) : "", cuerpo));
+    alterna = !alterna; extras.append(s);
+  }
+  const lista = items => el("ul", { class: "lista" }, ...items.map(i => {
+    const u = enlaceSeguro(i.url);
+    return el("li", null, el("b", null, i.titulo || ""), i.detalle ? el("span", null, i.detalle) : "", u ? el("div", null, el("a", { href: u, target: "_blank", rel: "noopener" }, "Abrir enlace")) : "");
+  }));
+  if (CONFIG.itinerario.length) seccion("itinerario", "Así será la noche", "", el("ol", { class: "horario" }, ...CONFIG.itinerario.map(i => el("li", null, el("time", null, hora12(i.hora)), i.titulo || ""))));
+  if (CONFIG.regalos.length) seccion("regalos", "Mesa de regalos", "Tu presencia es nuestro mejor regalo. Si además quieres tener un detalle, aquí encuentras nuestras opciones.", lista(CONFIG.regalos));
+  if (CONFIG.hospedaje.length) seccion("hospedaje", "Dónde hospedarte", "", lista(CONFIG.hospedaje));
+  if (CONFIG.preguntas.length) seccion("preguntas", "Preguntas frecuentes", "", lista(CONFIG.preguntas));
+})();
+
+/* ---------- Sobre ---------- */
+(function () {
+  const sobre = $("sobre");
+  let visto = false; try { visto = sessionStorage.getItem("sobreAbierto") === "1"; } catch (_) {}
+  if (visto) { document.body.classList.add("entra"); return; }
+  sobre.hidden = false; document.body.classList.add("locked");
+  $("sello").addEventListener("click", () => {
+    sobre.classList.add("abierto"); document.body.classList.remove("locked"); document.body.classList.add("entra");
+    try { sessionStorage.setItem("sobreAbierto", "1"); } catch (_) {}
+    setTimeout(() => { sobre.hidden = true; }, reducido ? 50 : 1350);
+  }, { once: true });
+})();
+
+/* =====================================================================
+   CONFIRMACIÓN
+   ===================================================================== */
+const form = $("rsvpForm"), postForm = $("postForm"), iframe = $("postFrame");
+const estadoBox = $("estado"), btnEnviar = $("enviar"), guardadaBox = $("guardada");
+let maxLugares = 1, cuantos = 1, nombreInvitado = "", enviando = false, esperado = null, temporizador = null;
+let demoGuardado = { encontrada: false };
+
+function aviso(msg, tipo) { estadoBox.textContent = msg; estadoBox.className = "aviso " + tipo; estadoBox.hidden = false; }
+function mostrarInvalida(msg) {
+  $("cargando").hidden = true; form.hidden = true; guardadaBox.hidden = true;
+  $("invalida").textContent = msg; $("invalida").hidden = false;
 }
 
-async function consultarEstadoActual(){
-  return jsonp("status",{codigo,token});
+function jsonp(action, datos) {
+  return new Promise((resolve, reject) => {
+    const cb = "rsvpCallback_" + Date.now() + "_" + Math.floor(Math.random() * 1e5);
+    const s = document.createElement("script");
+    const t = setTimeout(() => fin(new Error("Tiempo de espera agotado.")), 10000);
+    function fin(err, r) { clearTimeout(t); try { delete window[cb]; } catch (_) { window[cb] = undefined; } s.remove(); err ? reject(err) : resolve(r); }
+    window[cb] = d => fin(null, d);
+    s.onerror = () => fin(new Error("No se pudo conectar con el servicio."));
+    s.src = API_URL + "?" + new URLSearchParams({ action, ...datos, callback: cb, _: String(Date.now()) });
+    document.body.appendChild(s);
+  });
+}
+function api(action) {
+  if (!DEMO) return jsonp(action, { codigo, token });
+  return new Promise(r => setTimeout(() => r(action === "invitation"
+    ? { ok: true, valida: true, cupo_maximo: 4, nombre: "Familia Hernández López" }
+    : { ok: true, editable: true, ...demoGuardado }), 500));
 }
 
-async function verifySaved(expected){
-  for(let i=0;i<6;i++){
-    try{
-      const result=await consultarEstadoActual();
-      if(result&&result.ok&&result.encontrada){
-        // Si ya existía otra respuesta, mostrar la que realmente quedó guardada.
-        if(result.respuesta===expected.respuesta &&
-           Number(result.numero_asistentes)===expected.numero_asistentes){
-          showSavedResponse(result);
-          return true;
-        }
-        showSavedResponse(result);
-        return false;
+/* ----- Formulario ----- */
+function pintaNombres() {
+  const caja = $("nombres"), previos = [...caja.querySelectorAll("input")].map(i => i.value);
+  caja.replaceChildren();
+  for (let i = 0; i < cuantos; i++) {
+    caja.append(el("input", { type: "text", maxLength: 80, value: previos[i] || "", placeholder: "Asistente " + (i + 1), "aria-label": "Nombre del asistente " + (i + 1), autocomplete: "off" }));
+  }
+}
+function pintaCuantos() {
+  $("cuantos").textContent = cuantos;
+  $("menos").disabled = cuantos <= 1; $("mas").disabled = cuantos >= maxLugares;
+  pintaNombres();
+}
+$("menos").addEventListener("click", () => { if (cuantos > 1) { cuantos--; pintaCuantos(); } });
+$("mas").addEventListener("click", () => { if (cuantos < maxLugares) { cuantos++; pintaCuantos(); } });
+const respuestaElegida = () => (form.querySelector("input[name=respuesta]:checked") || {}).value || "";
+function alCambiarRespuesta() {
+  const r = respuestaElegida();
+  $("camposSi").hidden = r !== "asistira";
+  $("campoMensaje").hidden = !r;
+  $("mensaje").placeholder = r === "no_asistira" ? "Te vamos a extrañar. Si quieres, déjanos unas palabras." : "Unas palabras, una canción que no puede faltar…";
+  estadoBox.hidden = true;
+}
+form.querySelectorAll("input[name=respuesta]").forEach(r => r.addEventListener("change", alCambiarRespuesta));
+
+function prepararFormulario(inv) {
+  maxLugares = Math.max(1, Math.min(20, Number(inv.cupo_maximo) || 1));
+  nombreInvitado = String(inv.nombre || "").trim();
+  $("hola").textContent = nombreInvitado ? nombreInvitado + ":" : "Tu invitación";
+  $("cupo").textContent = maxLugares === 1 ? "Reservamos un lugar para ti." : "Reservamos " + maxLugares + " lugares para ustedes.";
+  $("campoCuantos").hidden = maxLugares === 1;
+  if (nombreInvitado) { $("sobreQuien").textContent = nombreInvitado; }
+  cuantos = 1; pintaCuantos();
+}
+function rellenarFormulario(r) {
+  const radio = form.querySelector('input[name=respuesta][value="' + r.respuesta + '"]');
+  if (radio) radio.checked = true;
+  cuantos = Math.max(1, Math.min(maxLugares, Number(r.numero_asistentes) || 1));
+  pintaCuantos();
+  const lista = String(r.nombres_asistentes || "").split(",").map(s => s.trim()).filter(Boolean);
+  $("nombres").querySelectorAll("input").forEach((inp, i) => { inp.value = lista[i] || ""; });
+  $("restricciones").value = r.restricciones || ""; $("mensaje").value = r.mensaje || "";
+  alCambiarRespuesta();
+}
+function bloquear(si) {
+  enviando = si; btnEnviar.disabled = si; btnEnviar.textContent = si ? "Enviando…" : "Enviar mi respuesta";
+  form.querySelectorAll("input,textarea,.contador button").forEach(n => { n.disabled = si; });
+  if (!si) pintaCuantos();
+}
+
+/* ----- Respuesta guardada ----- */
+function mostrarGuardada(r, recienEnviada) {
+  $("cargando").hidden = true; $("invalida").hidden = true; form.hidden = true;
+  const si = r.respuesta === "asistira", n = Number(r.numero_asistentes) || 0;
+  const filas = [];
+  const fila = (a, b) => { if (b) filas.push(el("div", null, el("dt", null, a), el("dd", null, b))); };
+  fila("Respuesta", si ? "Sí asistiré" : r.respuesta === "no_asistira" ? "No podré asistir" : "Registrada");
+  if (si) { fila("Asistentes", n === 1 ? "1 persona" : n + " personas"); fila("Nombres", r.nombres_asistentes); fila("Alimentos", r.restricciones); }
+  fila("Tu mensaje", r.mensaje);
+  const botones = el("div", { class: "acciones" });
+  if (si) botones.append(el("a", { class: "btn btn-tinta", href: $("calGoogle").href, target: "_blank", rel: "noopener" }, "Guardar la fecha"));
+  if (r.editable === true) {
+    const b = el("button", { class: "btn btn-linea", type: "button" }, "Cambiar mi respuesta");
+    b.addEventListener("click", () => { guardadaBox.hidden = true; rellenarFormulario(r); bloquear(false); form.hidden = false; form.scrollIntoView({ block: "center" }); });
+    botones.append(b);
+  }
+  guardadaBox.replaceChildren(
+    el("h3", null, si ? "¡Nos vemos en la boda!" : r.respuesta === "no_asistira" ? "Gracias por avisarnos" : "Tu respuesta ya está registrada"),
+    el("p", { class: "lead" }, si ? "Tu lugar está apartado. Nos hace muy felices saber que vienes." : r.respuesta === "no_asistira" ? "Te vamos a extrañar. Gracias por tomarte el tiempo de responder." : ""),
+    el("dl", { class: "resumen" }, ...filas), botones,
+    el("p", { class: "nota" }, r.editable === true
+      ? "Puedes cambiar tu respuesta desde este mismo enlace" + (r.fecha_limite ? " hasta el " + r.fecha_limite : "") + "."
+      : "Si necesitas corregir tu respuesta, escríbele a " + pareja + "."));
+  guardadaBox.hidden = false;
+  if (recienEnviada && si) confeti();
+}
+
+/* ----- Envío ----- */
+async function verificar() {
+  for (let i = 0; i < 6; i++) {
+    try {
+      const r = await api("status");
+      if (r && r.ok && r.encontrada) {
+        const igual = r.respuesta === esperado.respuesta && Number(r.numero_asistentes) === esperado.numero_asistentes;
+        mostrarGuardada(r, igual);
+        if (!igual) guardadaBox.append(el("p", { class: "aviso info" }, "Ya existía una respuesta para esta invitación y es la que se conserva."));
+        return;
       }
-      if(result&&result.ok===false){
-        showStatus(result.mensaje||"No se pudo validar la invitación.","error");
-        return false;
-      }
-    }catch(_){}
-    await new Promise(resolve=>setTimeout(resolve,1000));
+      if (r && r.ok === false) { aviso(r.mensaje || "No se pudo validar la invitación.", "error"); bloquear(false); return; }
+    } catch (_) {}
+    await new Promise(r => setTimeout(r, 1200));
   }
-  showStatus("No pudimos verificar el registro automáticamente. No vuelvas a enviar la respuesta; contacta a los anfitriones para comprobarla.","info");
-  return false;
+  aviso("No pudimos comprobar que tu respuesta se guardó. No la envíes otra vez todavía: recarga la página en un minuto para ver si ya aparece." + ayudaContacto(), "info");
+  bloquear(false);
 }
+function trasEnvio() {
+  if (!enviando || !esperado) return;
+  clearTimeout(temporizador); const e = esperado;
+  verificar().finally(() => { if (esperado === e) { esperado = null; enviando = false; } });
+  enviando = false; btnEnviar.disabled = true;
+}
+iframe.addEventListener("load", trasEnvio);
 
-iframe.addEventListener("load",async()=>{
-  if(!awaitingSubmit||!submitPayload)return;
-  awaitingSubmit=false;
-  const expected=submitPayload;
-  await verifySaved(expected);
-  submitButton.disabled=false;
-  submitButton.textContent="Enviar confirmación";
-  submitPayload=null;
-});
-
-form.addEventListener("submit",event=>{
-  event.preventDefault();
-  if(!codigo||!token||awaitingSubmit)return;
-
-  if(!API_URL.startsWith("https://script.google.com/macros/s/")||API_URL.includes("PEGA_AQUI")){
-    showStatus("El sitio todavía no está configurado con la URL del servicio.","error");
-    return;
-  }
-
-  const respuesta=respuestaSelect.value;
-  const count=respuesta==="no_asistira"?0:Number(asistentesSelect.value);
-
-  if(!["asistira","no_asistira"].includes(respuesta) ||
-     (respuesta==="asistira" && (!Number.isInteger(count)||count<1||count>maxGuests))){
-    showStatus("Revisa tu respuesta y el número de asistentes.","error");
-    return;
-  }
-
-  submitPayload={codigo,token,respuesta,numero_asistentes:count};
-  payloadInput.value=JSON.stringify(submitPayload);
-  postForm.action=API_URL;
-  awaitingSubmit=true;
-  submitButton.disabled=true;
-  respuestaSelect.disabled=true;
-  asistentesSelect.disabled=true;
-  submitButton.textContent="Enviando…";
-  showStatus("Estamos enviando tu respuesta. Por favor, espera un momento.","info");
+form.addEventListener("submit", ev => {
+  ev.preventDefault();
+  if (enviando) return;
+  const respuesta = respuestaElegida();
+  if (!respuesta) { aviso("Elige primero si podrás asistir.", "error"); return; }
+  const si = respuesta === "asistira";
+  const n = si ? cuantos : 0;
+  if (si && (!Number.isInteger(n) || n < 1 || n > maxLugares)) { aviso("El número de asistentes no puede pasar de " + maxLugares + ".", "error"); return; }
+  const nombres = si ? [...$("nombres").querySelectorAll("input")].map(i => i.value.trim()).filter(Boolean).join(", ") : "";
+  esperado = { codigo, token, respuesta, numero_asistentes: n, nombres_asistentes: nombres, restricciones: si ? $("restricciones").value.trim() : "", mensaje: $("mensaje").value.trim() };
+  bloquear(true);
+  aviso("Estamos guardando tu respuesta…", "info");
+  if (DEMO) { demoGuardado = { encontrada: true, ...esperado }; setTimeout(trasEnvio, 700); return; }
+  $("payload").value = JSON.stringify(esperado);
+  postForm.action = API_URL;
+  temporizador = setTimeout(trasEnvio, 9000);   // por si el marco no avisa que terminó
   postForm.submit();
 });
 
-async function init(){
-  if(!API_URL.startsWith("https://script.google.com/macros/s/")||API_URL.includes("PEGA_AQUI")){
-    showInvalid("El sitio todavía no está configurado con la URL del servicio. Contacta a los anfitriones.");
-    return;
-  }
-
-  if(!codigo||!token){
-    showInvalid("Este enlace no contiene una invitación personal válida. Abre el enlace que recibiste o contacta a los anfitriones.");
-    return;
-  }
-
-  try{
-    const result=await jsonp("invitation",{codigo,token});
-    if(!result||!result.ok||!result.valida){
-      showInvalid((result&&result.mensaje)||"La invitación no es válida o está deshabilitada.");
-      return;
+/* ----- Confeti dorado ----- */
+function confeti() {
+  if (reducido) return;
+  const c = $("confeti"), x = c.getContext("2d"), W = c.width = innerWidth, H = c.height = innerHeight;
+  c.hidden = false;
+  const col = ["#dcc59a", "#b4925a", "#f3ede1", "#8ea2b1"];
+  const p = Array.from({ length: 90 }, () => ({ x: W / 2 + (Math.random() - .5) * W * .5, y: H * .35, vx: (Math.random() - .5) * 9, vy: -Math.random() * 11 - 3, r: 3 + Math.random() * 5, a: Math.random() * 6, va: (Math.random() - .5) * .3, c: col[Math.floor(Math.random() * 4)] }));
+  let t = 0;
+  (function paso() {
+    x.clearRect(0, 0, W, H);
+    for (const q of p) {
+      q.vy += .22; q.vx *= .99; q.x += q.vx; q.y += q.vy; q.a += q.va;
+      x.save(); x.translate(q.x, q.y); x.rotate(q.a); x.globalAlpha = Math.max(0, 1 - t / 150); x.fillStyle = q.c;
+      x.beginPath(); x.ellipse(0, 0, q.r, q.r * .45, 0, 0, 6.3); x.fill(); x.restore();
     }
-
-    configureAttendanceOptions(result.cupo_maximo);
-
-    // Consultar primero si ya existe una respuesta para esta invitación.
-    const estado=await consultarEstadoActual();
-    if(!estado||estado.ok!==true){
-      showInvalid("No pudimos comprobar si esta invitación ya tiene una respuesta. Recarga la página más tarde o contacta a los anfitriones.");
-      return;
-    }
-
-    loadingBox.classList.add("hidden");
-    invalidBox.classList.add("hidden");
-
-    if(estado.encontrada){
-      showSavedResponse(estado);
-      return;
-    }
-
-    form.classList.remove("hidden");
-    respuestaSelect.disabled=false;
-    asistentesSelect.disabled=false;
-    submitButton.disabled=false;
-    updateAttendanceOptions();
-  }catch(error){
-    showInvalid("No pudimos verificar tu invitación o su estado en este momento. Inténtalo más tarde.");
-  }
+    if (++t < 150) requestAnimationFrame(paso); else c.hidden = true;
+  })();
 }
 
-init();
-</script></body></html>
+/* ----- Arranque ----- */
+(async function iniciar() {
+  if (!DEMO && !API_URL.startsWith("https://script.google.com/macros/s/")) { mostrarInvalida("La página todavía no está conectada con el registro de invitados."); return; }
+  if (!DEMO && (!codigo || !token)) {
+    $("rsvpLead").textContent = "Para confirmar necesitas tu enlace personal.";
+    mostrarInvalida("Este enlace no trae una invitación personal. Abre el que recibiste por mensaje." + ayudaContacto());
+    return;
+  }
+  try {
+    const inv = await api("invitation");
+    if (!inv || !inv.ok || !inv.valida) { mostrarInvalida((inv && inv.mensaje) || "No reconocemos esta invitación. Revisa que el enlace esté completo." + ayudaContacto()); return; }
+    prepararFormulario(inv);
+    const est = await api("status");
+    if (!est || est.ok !== true) { mostrarInvalida("No pudimos revisar si ya habías respondido. Recarga la página en unos minutos."); return; }
+    $("cargando").hidden = true;
+    if (est.encontrada) { mostrarGuardada(est, false); return; }
+    if (inv.cerrado === true) { mostrarInvalida("La fecha para confirmar ya pasó." + ayudaContacto()); return; }
+    if (inv.fecha_limite) $("rsvpLead").textContent = "Cuéntanos si podrás venir. Tienes hasta el " + inv.fecha_limite + ".";
+    form.hidden = false; alCambiarRespuesta();
+  } catch (_) {
+    mostrarInvalida("No pudimos abrir tu invitación en este momento. Revisa tu conexión y recarga la página.");
+  }
+})();
+</script>
+</body>
+</html>
